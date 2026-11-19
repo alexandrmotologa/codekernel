@@ -1,0 +1,35 @@
+project:
+  name: "codekernel-sample"
+  storage_dir: ".codekernel"
+  database_path: ".codekernel/index.db"
+
+parser:
+  max_file_size_kb: 1024
+  exclude_dirs:
+    - ".git"
+    - "node_modules"
+    - "vendor"
+    - "dist"
+    - "build"
+    - ".venv"
+    - "__pycache__"
+  languages:
+    - "go"
+    - "typescript"
+    - "javascript"
+    - "python"
+    - "rust"
+    - "java"
+
+packing:
+  default_budget: 4096
+  max_hops: 2
+  include_docstrings: true
+  compress_callees: true
+
+server:
+  host: "127.0.0.1"
+  port: 8888
+
+lsp:
+  log_file: ".codekernel/lsp.log"

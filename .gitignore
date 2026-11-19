@@ -1,0 +1,27 @@
+# Binaries and build artifacts
+bin/
+dist/
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+/codekernel
+
+# codekernel internal database & cache
+.codekernel/
+*.codekernel.db*
+
+# Node / Web UI
+node_modules/
+web/.vite/
+.pnpm-store/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
